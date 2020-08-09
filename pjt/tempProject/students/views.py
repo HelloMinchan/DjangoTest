@@ -67,7 +67,7 @@ def delConStudent(request, name):
 
 
 def ejealgetda(request):
-	qs = Student.objects.all()
-	context = {'student_list': qs}
+	qsa = Student.objects.all()
+	context = {'student_list': qsa}
 	
 	return render(request, 'students/readStudents.html', context)
